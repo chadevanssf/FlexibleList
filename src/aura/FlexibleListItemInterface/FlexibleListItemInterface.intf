@@ -1,0 +1,7 @@
+<aura:interface access="global" description="Interface for FlexibleListItem components"
+                extends="force:hasRecordId,force:hasSObjectName">
+    <aura:attribute name="record" type="object" description=" The data record"/>
+    <aura:attribute name="displayFieldsArray" type="object[]" description="The list of fields to be displayed"/>
+    <aura:attribute name="additionalFieldsArray" type="object[]" description="The list of fields for use by the component" />
+    <aura:attribute name="iconCategoryName" type="string" description="The Category:Name of the icon to be displayed on each record"/>
+</aura:interface>

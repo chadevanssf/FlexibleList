@@ -1,0 +1,15 @@
+<aura:component access="global">
+    <aura:attribute name="record" type="object"/>
+    <aura:attribute name="iconCategoryName" type="string" access="global"/>
+    
+    <div class="slds-grid slds-media--center" >
+        <div class="slds-media__figure" >
+            <lightning:icon iconName="{!v.iconCategoryName}" size="small"/>
+        </div>
+        <div class="slds-media__body" >
+            <span class="slds-text-heading--small slds-truncate" >
+                <a href="" data-recordid="{!v.record.Id}" onclick="{!c.navToRecord}">{!v.record.Name}&nbsp;</a>
+            </span>
+        </div>
+    </div>
+</aura:component>
