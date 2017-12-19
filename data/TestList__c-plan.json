@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "TestList__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "TestList__cs.json"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnythingPathList</fullName>
+    <types>
+        <members>FlexibleListCtrl</members>
+        <members>FlexibleListCtrlTest</members>
+        <members>LightningComponentPickList</members>
+        <members>Ora</members>
+        <members>OraTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AnythingPath</members>
+        <members>AnythingPathList</members>
+        <members>AnythingPathListCard</members>
+        <members>AnythingPathListIcon</members>
+        <members>FieldChangeEvent</members>
+        <members>FlexibleList</members>
+        <members>FlexibleListItemHeader</members>
+        <members>FlexibleListItemInterface</members>
+        <members>LightningErrorHandler</members>
+        <members>SingleFieldDisplayer</members>
+        <members>Streamer</members>
+        <members>StreamerEvent</members>
+        <members>handleCallbackError</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>AnythingPathListIcons</members>
+        <members>streaming</members>
+        <name>StaticResource</name>
+    </types>
+    <version>41.0</version>
+</Package>

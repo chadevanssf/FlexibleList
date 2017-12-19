@@ -1,0 +1,13 @@
+<design:component >
+    <design:attribute name="title" label="List Title" Description="Display Title of the list, defaults to the object's plural label" />
+    <design:attribute name="sObjectName" label="Object name" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
+    <design:attribute name="displayFields" label="Display Fields" Description="List of API names, comma separated, of the fields you want to display" />
+    <design:attribute name="additionalFields" label="Additional Fields" Description="List of API names, comma separated, of the fields for the list item to handle" />
+    <design:attribute name="displayAsGrid" label="Display As Grid" Description="Display the items as a grid, typically used for Tiles" />
+    <design:attribute name="listViewName" label="List View Name" Description="API Name of the List View to go to when doing a view all on the list" />
+    <design:attribute name="iconCategoryName" label="Icon Category:Name" Description="Category:Name of the icon, from the acceptable icon category:names in the Lighting Design System at https://www.lightningdesignsystem.com/icons/"/>
+    <design:attribute name="limitRecords" label="Number of Records" Description="Restrict the results, to this many records"/>
+    <design:attribute name="whereClause" label="Where Clause" Description="Restrict the results using this clause, in SOQL WHERE format"/>
+    <design:attribute name="customSoql" label="Custom SOQL" Description="Override generated SOQL, also set Display Fields"/>
+    <design:attribute name="listItemComponent" label="List Item Component" datasource="apex://LightningComponentPickList" Description="Specifies what Lightning Component to load for each item"/>
+</design:component>

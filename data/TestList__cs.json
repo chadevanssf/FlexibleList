@@ -1,0 +1,13 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "TestList__c",
+                "referenceId": "TestList__cRef1"
+            },
+            "Completed_Date__c": "2017-12-19T20:00:00.000+0000",
+            "Short_Description__c": "This is a test",
+            "Status__c": "Active"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+SELECT Id, Completed_Date__c, Completion_State__c, Short_Description__c, Status__c FROM TestList__c

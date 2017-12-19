@@ -1,0 +1,33 @@
+<aura:component access="global" 
+                implements="c:FlexibleListItemInterface">
+    
+    <div class="slds-tile slds-size_1-of-1">
+        <c:FlexibleListItemHeader record="{!v.record}"
+                                  iconCategoryName="{!v.iconCategoryName}"/>
+        <aura:iteration items="{!v.additionalFieldsArray}" var="field">
+            <c:AnythingPath recordId="{!v.recordId}"
+                            sObjectName="{!v.sObjectName}"
+                            pathField="{!field.describe.name}"
+                            clickToChange="false"
+                            listenForChange="false" />
+        </aura:iteration>
+        <div class="slds-tile__detail" >
+            <lightning:layout horizontalAlign="spread">
+                <aura:iteration items="{!v.displayFieldsArray}" var="field">
+                    <lightning:layoutItem size="12" mediumDeviceSize="{!div(12,v.displayFieldsArray.length)}">
+                        <dl>
+                            <dt>
+                                <span class="slds-text-heading_label">{!field.describe.label}</span>
+                            </dt>
+                            <dd>
+                                <span class="">
+                                    <c:SingleFieldDisplayer record="{!v.record}" fieldDescribe="{!field}"/>
+                                </span>
+                            </dd>
+                        </dl>
+                    </lightning:layoutItem>
+                </aura:iteration>                            
+            </lightning:layout>
+        </div>
+    </div>
+</aura:component>

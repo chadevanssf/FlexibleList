@@ -1,0 +1,12 @@
+<design:component >
+    <design:attribute name="title" label="List Title" Description="Display Title of the list, defaults to the object's plural label" />
+    <design:attribute name="objectName" label="Object name" datasource="apex://EntityPickList" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
+    <design:attribute name="listViewName" label="List View Name" Description="API Name of the List View to go to when doing a view all on the list" />
+    <design:attribute name="displayFields" label="Display Field" Description="List of API names, comma separated, of the fields you want to display" />
+    <design:attribute name="pathField" label="AnythingPath Field" Description="API name of the field you want to display in the Anypath control" />
+    <design:attribute name="limitRecords" label="Number of Records" Description="Restrict the results, to this many records"/>
+    <design:attribute name="whereClause" label="Where Clause" Description="Restrict the results using this clause, in SOQL WHERE format"/>
+    <design:attribute name="customSoql" label="Custom SOQL" Description="Custom SOQL to run, still need to configure the fields to access the values"/>
+    <design:attribute name="iconCategory" label="Icon Category" Description="Category of the icon, one of action, custom, doctype, standard, utility"/>
+    <design:attribute name="iconName" label="Icon Name" Description="Name of the icon, from the acceptable icon names in the Lighting Design System"/>
+</design:component>
