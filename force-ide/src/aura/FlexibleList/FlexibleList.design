@@ -1,6 +1,6 @@
 <design:component >
     <design:attribute name="title" label="List Title" Description="Display Title of the list, defaults to the object's plural label" />
-    <design:attribute name="sObjectName" label="Object name" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
+    <design:attribute name="sObjectName" label="Object name" datasource="apex://EntityPickList" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
     <design:attribute name="displayFields" label="Display Fields" Description="List of API names, comma separated, of the fields you want to display" />
     <design:attribute name="additionalFields" label="Additional Fields" Description="List of API names, comma separated, of the fields for the list item to handle" />
     <design:attribute name="displayAsGrid" label="Display As Grid" Description="Display the items as a grid, typically used for Tiles" />

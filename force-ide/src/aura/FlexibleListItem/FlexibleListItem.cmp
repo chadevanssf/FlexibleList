@@ -1,23 +1,22 @@
-<aura:component access="global" 
-                implements="c:FlexibleListItemInterface">
+<aura:component access="global" implements="c:FlexibleListItemInterface">
+    <aura:attribute name="record" type="object"/>
+    <aura:attribute name="objectName" type="string"/>
+    <aura:attribute name="displayFieldsArray" type="object[]"/>
+    <aura:attribute name="additionalFieldsArray" type="object[]" />
+    <aura:attribute name="iconCategoryName" type="string"/>
     
-    <div class="slds-tile slds-size_1-of-1">
+    <div class="slds-tile slds-card__tile">
+        
         <c:FlexibleListItemHeader record="{!v.record}"
                                   iconCategoryName="{!v.iconCategoryName}"/>
-        <aura:iteration items="{!v.additionalFieldsArray}" var="field">
-            <c:AnythingPath recordId="{!v.recordId}"
-                            sObjectName="{!v.sObjectName}"
-                            pathField="{!field.describe.name}"
-                            clickToChange="false"
-                            listenForChange="false" />
-        </aura:iteration>
+        
         <div class="slds-tile__detail" >
             <lightning:layout horizontalAlign="spread">
                 <aura:iteration items="{!v.displayFieldsArray}" var="field">
                     <lightning:layoutItem size="12" mediumDeviceSize="{!div(12,v.displayFieldsArray.length)}">
                         <dl>
                             <dt>
-                                <span class="slds-text-heading_label">{!field.describe.label}</span>
+                                <span class="slds-text-heading--label">{!field.describe.label}</span>
                             </dt>
                             <dd>
                                 <span class="">

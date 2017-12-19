@@ -1,6 +1,6 @@
-<design:component>
+<design:component >
     <design:attribute name="title" label="List Title" Description="Display Title of the list, defaults to the object's plural label" />
-    <design:attribute name="objectName" label="Object name" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
+    <design:attribute name="objectName" label="Object name" datasource="apex://EntityPickList" Description="API Name of the object that you want in the related list (e.g. Contact or Something__c)" />
     <design:attribute name="listViewName" label="List View Name" Description="API Name of the List View to go to when doing a view all on the list" />
     <design:attribute name="displayFields" label="Display Field" Description="List of API names, comma separated, of the fields you want to display" />
     <design:attribute name="pathField" label="AnythingPath Field" Description="API name of the field you want to display in the Anypath control" />

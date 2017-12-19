@@ -26,7 +26,7 @@
     <aura:attribute name="results" type="object[]" access="private"/>
     <aura:attribute name="pluralLabel" type="string" access="private"/>
     
-    <lightning:card class="slds-text-body--regular" iconName="{!v.iconCategoryName}">
+    <lightning:card class="slds-text-body_regular" iconName="{!v.iconCategoryName}">
         <aura:set attribute="title">
             {!v.title} ({!v.results.length})
         </aura:set>
@@ -34,11 +34,11 @@
             <a href="" onclick="{!c.navToList}">View All</a>
         </aura:set>
         <aura:if isTrue="{!v.displayAsGrid}">
-            <div class="slds-card__body--inner slds-grid">
+            <div class="slds-card__body_inner slds-grid">
                 {!v.flexibleListItems}
             </div>
             <aura:set attribute="else">
-                <div class="slds-card__body--inner">
+                <div class="slds-card__body_inner">
                     {!v.flexibleListItems}
                 </div>
             </aura:set>

@@ -25,13 +25,13 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
     <aura:if isTrue="{!!v.badField}">
-        <div class="slds-tabs--path slds-p-around--small" role="application tablist">
-            <ul class="slds-tabs--path__nav" role="presentation">
+        <div class="slds-tabs_path slds-p-around_small" role="application tablist">
+            <ul class="slds-tabs_path__nav" role="presentation">
                 <aura:iteration items="{!v.pathObjects}" var="step">
-                    <li class="{!'slds-tabs--path__item slds-' + step.statusClass}" role="presentation">
-                        <a class="slds-tabs--path__link" aria-selected="{!step.ariaSelected}" tabindex="{!step.tabIndex}" role="tab" aria-live="assertive"  title="{!step.value}" onclick="{!c.handleClick}">
-                            <lightning:icon iconName="utility:check" size="x-small" alternativeText="Stage Complete" class="slds-tabs--path__stage"/>
-                            <span class="slds-tabs--path__title" title="{!step.value}">{!step.label}</span>
+                    <li class="{!'slds-tabs_path__item slds-' + step.statusClass}" role="presentation">
+                        <a class="slds-tabs_path__link" aria-selected="{!step.ariaSelected}" tabindex="{!step.tabIndex}" role="tab" aria-live="assertive"  title="{!step.value}" onclick="{!c.handleClick}">
+                            <lightning:icon iconName="utility:check" size="x-small" alternativeText="Stage Complete" class="slds-tabs_path__stage"/>
+                            <span class="slds-tabs_path__title" title="{!step.value}">{!step.label}</span>
                         </a>
                     </li>
                 </aura:iteration>            
@@ -39,8 +39,8 @@
         </div>
     </aura:if>
     <aura:if isTrue="{!v.badField}">
-        <div class="slds-box slds-theme--error">
-            <div class="slds-text-heading--large">AnythingPath: The field you've selected doesn't exist</div>
+        <div class="slds-box slds-theme_error">
+            <div class="slds-text-heading_large">AnythingPath: The field you've selected doesn't exist</div>
             <h3 class="slds-section__title">Check to be sure you entered the right field's API Name in App Builder, including __c if custom</h3>
         </div>
     </aura:if>
